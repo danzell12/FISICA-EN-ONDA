@@ -556,7 +556,11 @@ function closeModal() {
             const modal = document.getElementById("history-box");
             modal.style.display = "none";
         }
-
+   function clearHistory() {
+    historyData.length = 0; 
+    const historyElement = document.getElementById("history-box");
+    historyElement.innerHTML = "<p>No hay operaciones en el historial.</p>";
+}
 
     </script>
     
